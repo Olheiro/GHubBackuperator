@@ -170,57 +170,60 @@ FAQ
 VERSION HISTORY
 ---------------
 
-* 0.1 @echo off
+֍ 0.1 
+- @echo off
 
-* 0.3 
+֍ 0.2
 - Utility created as two separate batch files that copy G Hub setting files to
   a directory in my own Downloads folder and restore files from that location.
 
-* 0.301
+֍ 0.201
 - Added files from C:\ProgramData to backup.
 
-* 0.305
+֍ 0.205
 - Code optmized and commented.
 
-* 0.31
+֍ 0.3
 - Added defining the backup location using the C:\Users\%username&\Downloads\
   format instead of using my own username.
 - Added fecthing AppData and ProgramData locations using environment variables
   instead of the locations in my own drive.
 
-* 0.32 
+֍ 0.31 
 - Added automatic detection of the exact Download folder location for more 
   flexibility with custom locations and to acommodate users running Windows in
   a language that doesn't use the word Downloads for that folder.
 
-* 0.5
+֍ 0.4
 - Code optimized and cleaned up.
+
+֍ 0.5
 - Fixed issue with detecting the Download folder's location.
 - Added automatically terminating G Hub and associated processes to prevent
   access violation errors when restoring backups.
 
-* 0.505
+֍ 0.505
 - Added displaying information such as where the backup files are saved at the
   start of the batch files.
 
-* 0.508
+֍ 0.508
 - Added pauses requiring a keypress to proceed after the initial information
   prompt and at the end of the script.
 - Added information at the end of the scripts.
 - Improved formatting of information prompts.
 - Revised the initial text.
 
-* 0.51
+֍ 0.51
 - Added automatic UAC elevation request to the restore batch so users don't
   need to run it as administrator. Elevation is required to delete files from
   and copy files to %ProgramData%. If the batch is launched with Administrator
   rights, no elevation prompt is shown.
 
-* 0.6
+֍ 0.6
 - Major script structure revision.
 - Added prompt to proceed or cancel after the initial description.
 
-* 0.61
+֍ 0.61
 - Added information that no action was taken when choosing to not proceed and
   of invalid input.
 - Added displaying actions being taken during the backup and restore process.
@@ -230,7 +233,7 @@ VERSION HISTORY
   of the backup script.
 - Changed visual elements for uniformity.
 
-* 0.63
+֍ 0.63
 - Added >nul to process termination commands.
 - Removed command to terminate the lghub_updater.exe process, which runs as a
   service and cannot be terminated with a simple taskkill command. The process
@@ -238,22 +241,22 @@ VERSION HISTORY
 - Added intervals after information prompts and between actions to facilitate
   following execution.
 
-* 0.64
+֍ 0.64
 - Added descriptions of the actions being performed broken down into individual
   commands.
 - Added easter egg.
 
-* 0.65
+֍ 0.65
 - Changed inital information to include both the variable location and the
   exact directory in the local Windows installation.
 - Added the directories being copied or removed at each step of the backup and
   restore procedures.
 
-* 0.66
+֍ 0.66
 - Fixed issue that caused the restore script to terminate prematurely when
   deleting files before copying over the backup.
 
-* 0.666
+֍ 0.666
 - Realized I had backep up incomplete settings due to the premature termination
   issue that were then restored while testing and I might have lost dozens of
   G Hub profiles created over years.
@@ -286,22 +289,22 @@ VERSION HISTORY
   month ago, for some reason I can't quite explain to this day.
 - Nature is healing.
 
-* 0.67
+֍ 0.67
 - Added check to confirm all four backup directories are present in the backup.
 - Saved a backup-backup because fool me twice, you... you can't fool me again.
 
-* 0.675
+֍ 0.675
 - Code optimized
 - Visual presentation improvements
 - Tweaked pause between steps
 - Changed batch file names to not use the same name as the backup directory.
 - Changed backup directory and batch files names to not use spaces.
 
-* 0.68
+֍ 0.68
 - Overhauled the process termination routine to first check whether processes
   are running before terminating them.
 
-* 0.685
+֍ 0.685
 - Added additional commands to terminate the lghubagent.exe process multiple
   times as it restarts a few seconds after being terminated in more recent
   G Hub versions.
@@ -313,12 +316,13 @@ VERSION HISTORY
 - Modified the routine for the process termination banner to only show the
   information if any of the processes is running.
 
-* 0.69
+֍ 0.69
 - Nice.
 - Modified the routine for the process termination banner to show the
   information only before the first process is terminated and not in subsequent
   ones.
 - Added lghub_system_tray.exe to the list of processes to be terminated.
 
-* 0.7
-$ Hello world.
+֍ 0.7
+* Hello world.
+
