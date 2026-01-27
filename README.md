@@ -321,4 +321,4 @@ VERSION HISTORY
 - Added lghub_system_tray.exe to the list of processes to be terminated.
 
 * 0.7
-x Hello world.
+– Hello world.
