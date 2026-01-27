@@ -121,49 +121,49 @@ If that happens, follow these steps in order until G Hub runs normally:
 FAQ
 ---
 
-* Wow!
-- Yeah.
+1. Wow!
+   Yeah.
 
-* Why?
-- A mix of frustrated with Logitech, mad at G Hub, bored, and hyperfocus.
+2. Why?
+   A mix of frustrated with Logitech, mad at G Hub, bored, and hyperfocus.
 
-* Will you make a Mac version?
-- The only time I use a mac is when it rains.
+3. Will you make a Mac version?
+   The only time I use a mac is when it rains.
 
-* Will you make a Linux version?
-- Be honest, you know G Hub is not avaliable for Linux, you're just asking that
-  because you are legally mandated to tell people you use Linux.
+4. Will you make a Linux version?
+   Be honest, you know G Hub is not avaliable for Linux, you're just asking that
+   because you are legally mandated to tell people you use Linux.
 
-* Your code is shit!
-- I'm glad there are good enough coders to not only notice that but to also
-  improve it. Wipe the cheetos dust off your fingies and get to it.
+5. Your code is shit!
+   I'm glad there are good enough coders to not only notice that but to also
+   improve it. Wipe the cheetos dust off your fingies and get to it.
 
-* Hamburgers or hot dogs?
-- Hamburgers.
+6. Hamburgers or hot dogs?
+   Hamburgers.
 
-* WHY DO YOU HATE HOT DOGS? YOU MONSTER!
-- Don't feed the trolls.
+7. WHY DO YOU HATE HOT DOGS? YOU MONSTER!
+   Don't feed the trolls.
 
-* Do you have plans for improvements?
-- I'll probably join both files into a single batch. Adding a way to choose the
-  backup location or where to restore from would be nice. Longer term could
-  include turning it into an executable with a GUI.
+8. Do you have plans for improvements?
+   I'll probably join both files into a single batch. Adding a way to choose the
+   backup location or where to restore from would be nice. Longer term could
+   include turning it into an executable with a GUI.
 
-* I want to request a feature.
-- And I want world peace, that doesn't mean it will happen. Drop a note anyway,
-  I might get to it before I get distracted by some jingling keys.
+9. I want to request a feature.
+   And I want world peace, that doesn't mean it will happen. Drop a note anyway,
+   I might get to it before I get distracted by some jingling keys.
 
-* I want to report a bug.
-- Go ahead, it's not like I need to grant you authorization or anything.
+10. I want to report a bug.
+    Go ahead, it's not like I need to grant you authorization or anything.
 
-* How can I reward you?
-- Thanks would be nice. If you want to give me money, we could meet in a dark
-  alley after business hours. Bring unmarked, non sequential notes in an
-  opaque, non-descript plastic bag and wear something that doesn't contrast too
-  much with red. I'll always accept nudes if that's your thing.
+11. How can I reward you?
+    Thanks would be nice. If you want to give me money, we could meet in a dark
+    alley after business hours. Bring unmarked, non sequential notes in an
+    opaque, non-descript plastic bag and wear something that doesn't contrast too
+    much with red. I'll always accept nudes if that's your thing.
 
-* Hotel?
-- Trivago.
+12. Hotel?
+    Trivago.
 
 
 ---------------
