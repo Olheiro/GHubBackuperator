@@ -1,4 +1,4 @@
-# G Hub Backuperator
+# GHubBackuperator
 Backup and restore Logitech G Hub's settings without a Logitech account.
 Eat it, corpos!
 
@@ -55,28 +55,28 @@ guarantee I'll be able to soothe your pain.
 INSTRUCTIONS
 ------------
 
-The utility consists of two batch files, GHub_Backup_script.bat and
-GHub_Restore_script.bat.
+The utility consists of a batch file called GHub Backup and Restore.bat.
 
-The batch files can be executed from anywhere on the user's drive, including
-removable media. They will automatically fetch the locations of the Download
+The batch file can be executed from anywhere on the user's drive, including
+removable media. It will automatically fetch the locations of the Download
 folder as well as of G Hub's settings.
 
-The restore batch file must run as administrator to have write access in
-ProgramData. It can be run in an elevated terminal or the script will show a
-UAC elevtation prompt when launched.
+The batch file must run as administrator to have write access in ProgramData. 
+It can be run in an elevated terminal or the script will show a UAC elevation
+prompt when launched.
 
-The backup bacth file does not need any special permission.
 
 
 ** To backup G Hub's settings:
 
-1. Execute GHub_Backup_script.bat.
+1. Execute GHub_Backup_and_Restore.bat.
 
-2. Press Y at the prompt to proceed. Or not, do whatever you want,
-   I'm not yout real father anyway.
+2. Choose C at the prompt to create a backup. Or not, do whatever you want,
+   I'm not yout real dad anyway.
 
-3. Wait until the backup is complete.
+3. Choose Y in the next prompt to proceed.
+
+4. Wait until the backup is complete.
 
 The backup will be in Downloads/GHub_Backup split into AppData and
 ProgramData folders.
@@ -87,14 +87,18 @@ ProgramData folders.
 1. Make sure the backup files are in Downloads/GHub_Backup with the same
    subfolder structure as when copied.
 
-2. Execute GHub_Restore_script.bat.
+2. Execute GHub_Backup_and_Restore.bat.
 
-3. Press Y at the prompt to proceed. You'd better or you'll need to manually
-   recreate each profile again in G Hub.
+3. Choose R in the prompt to restore a backup.
 
-4. Wait until the backup is restored.
+4. Choose Y in the next prompt to proceed.
 
-5. Launch G Hub.
+5. Press Y at the next prompt to proceed. You'd better or you'll need to 
+   manually recreate each profile again in G Hub.
+
+6. Wait until the backup is restored.
+
+7. Launch G Hub.
 
 
 ------------
@@ -110,7 +114,7 @@ If that happens, follow these steps in order until G Hub runs normally:
 
 2. Terminate all G Hub processes in Task Manager and launch G Hub again.
 
-3. Restart Windows.
+3. Restart Windows (you can skip step 2 if you're not comfotable with it).
 
 4. Reinstall G Hub and choose to transfer your settings so it repairs files
    that are incompatible with the version of the backup or adds files required
@@ -145,9 +149,8 @@ FAQ
 *  Don't feed the trolls.
 
 8. Do you have plans for improvements?
-*  I'll probably join both files into a single batch. Adding a way to choose the
-   backup location or where to restore from would be nice. Longer term could
-   include turning it into an executable with a GUI.
+*  Adding a way to choose the backup location or where to restore from would be
+   nice. Longer term could include turning it into an executable with a GUI.
 
 9. I want to request a feature.
 *  And I want world peace, that doesn't mean it will happen. Drop a note anyway,
@@ -216,7 +219,7 @@ VERSION HISTORY
 ֍ 0.51
 - Added automatic UAC elevation request to the restore batch so users don't
   need to run it as administrator. Elevation is required to delete files from
-  and copy files to %ProgramData%. If the batch is launched with Administrator
+  and copy files to %ProgramData%. If the batch is launched with administrator
   rights, no elevation prompt is shown.
 
 ֍ 0.6
@@ -228,7 +231,7 @@ VERSION HISTORY
   of invalid input.
 - Added displaying actions being taken during the backup and restore process.
 
-* 0.62
+֍ 0.62
 - Added a list of directories that are part of the backup to the initial text
   of the backup script.
 - Changed visual elements for uniformity.
@@ -263,7 +266,7 @@ VERSION HISTORY
 - Remembered I had deleted the backup-backup "because I don't need it anymore
   to prevent data loss while testing, the scripts are working fine."
 - Panicked.
-- Regreted having ever have progressed from version 0.5.
+- Regreted having ever have progressed from version 0.2.
 - Why the fuck did I have to get cocky and decide to facilitate sharing this?
   What do you want, validation and praise from strangers on the interwebs for
   how awesome you are for helping them circumvent G Hub's limitations? Fuck me
@@ -276,7 +279,7 @@ VERSION HISTORY
   mostly damaged files.
 - Sent frantic audio messages to a friend trying to make sense of the shit I
   had dug myself into and share the burden to prevent an axiety attack.
-- Remembered while recording the second audio message  there was a slight
+- Remembered while recording the second audio message there was a slight
   possibility who knows I might possibly still have an older backup but I think
   I deleted it and confirmed that, yep, it's gone.
 - Found an even older backup of over six months by pure chance saved on the
@@ -305,11 +308,11 @@ VERSION HISTORY
   are running before terminating them.
 
 ֍ 0.685
-- Added additional commands to terminate the lghubagent.exe process multiple
+- Added additional commands to terminate the lghub_agent.exe process multiple
   times as it restarts a few seconds after being terminated in more recent
   G Hub versions.
 - Added /F to the command to terminate lghub.exe that was missing and caused
-  lgagent.exe to restart after an even shorter time.
+  lghub_agent.exe to restart after an even shorter time.
 - Removed note in the processes termination step about an error that would be
   shown when terminating processes if G Hub isn't running as that was fixed by
   first checking if processes are running.
@@ -319,10 +322,12 @@ VERSION HISTORY
 ֍ 0.69
 - Nice.
 - Modified the routine for the process termination banner to show the
-  information only before the first process is terminated and not in subsequent
-  ones.
+  information only before the first process is terminated and not again in
+  subsequent ones.
 - Added lghub_system_tray.exe to the list of processes to be terminated.
 
 ֍ 0.7
 * Hello world.
 
+֍ 0.8
+* Joined the backup and restore scripts into a single batch file.
