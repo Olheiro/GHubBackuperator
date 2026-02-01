@@ -18,15 +18,14 @@ those processes over a few seconds with no need to dive into system folders.
 
 The settings files backed up are located in %LocalAppData%\LGHUB\,
 %AppData%\G HUB\, %AppData%\lghub\ and %ProgramData%\LGHUB\ and are saved in
-Downloads/GHub_Backup. Backup size can vary, but it's reasonable to expect
-a couple of GB. Some sources claim files in ProgramData don't need to be backed
-up, but my testing has shown restoring those makes for a smoother transition to
-previous settings with a fresh G Hub install.
+Downloads/GHub_Backup.
 
-The utility automatically detects the directory of the Downloads folder so it
-is compatible with Windows installations that don't use the same name as in
-English and other languages. It also automatically requests UAC elevation for
-the restore batch file so it can have write access to ProgramData.
+The backup can be saved to or restored from the default Downloads\GHub_Backup
+or a custom location can be chosen.
+
+The batch file must be run as administrator so it can have write access to 
+ProgramData. It automatically requests UAC elevation if launched without
+administrator priviledge.
 
 
 -------
@@ -55,50 +54,69 @@ guarantee I'll be able to soothe your pain.
 INSTRUCTIONS
 ------------
 
-The utility consists of a batch file called GHub Backup and Restore.bat.
+The utility consists of a batch file called GHub_Backuperator.bat.
 
 The batch file can be executed from anywhere on the user's drive, including
-removable media. It will automatically fetch the locations of the Download
-folder as well as of G Hub's settings.
+removable media. 
 
 The batch file must run as administrator to have write access in ProgramData. 
-It can be run in an elevated terminal or the script will show a UAC elevation
-prompt when launched.
-
+The script will show a UAC elevation prompt when launched as a regular user.
 
 
 ** To backup G Hub's settings:
 
-1. Execute GHub_Backup_and_Restore.bat.
+1. Execute GHub_Backuperator.bat as administrator.
+
+1a. Confirm the UAC elevation prompt if the batch is not run as administrator.
 
 2. Choose C at the prompt to create a backup. Or not, do whatever you want,
    I'm not yout real dad anyway.
 
 3. Choose Y in the next prompt to proceed.
 
-4. Wait until the backup is complete.
+4. Choose D to create the backup in Downloads\GHub_Backup or C to choose a 
+   custom location. C:\ is not allowed.
 
-The backup will be in Downloads/GHub_Backup split into AppData and
-ProgramData folders.
+4a. If using a custom location, select the folder where the AppData and
+    ProgramData settings folders will be saved to.
+
+4b. Choose C to confirm the custom backup folder or S to select another one.
+
+5. Wait until the backup is complete.
+
+6. Launch G Hub again if it was running.
+
+The backup will be in Downloads/GHub_Backup or in the custom folder selected
+split into AppData and ProgramData folders.
 
 
 ** To restore G Hub's settings from a backup:
 
-1. Make sure the backup files are in Downloads/GHub_Backup with the same
-   subfolder structure as when copied.
+1. Make sure the backup files are in the default Downloads\GHub_Backup or a
+   custom folder with the same subfolder structure as when copied, i.e.,
+   split into AppData and ProgramData.
 
-2. Execute GHub_Backup_and_Restore.bat.
+2. Execute GHub_Backuperator.bat.
 
 3. Choose R in the prompt to restore a backup.
 
 4. Choose Y in the next prompt to proceed.
 
-5. Press Y at the next prompt to proceed. You'd better or you'll need to 
+5. Choose D to use the default Downloads\GHub_Backup folder or C to select a
+   custom folder. Restoring from C:\ is not allowed.
+
+5a. If restoring from a custom folder, open it in the dialog. The folder
+    containing the AppData and ProgramData folders must be selected, e.g.,
+    Open the GHub_Backup folder if the backup was saved in default location. 
+
+5b. Choose C to confirm the custom restore folder or S to select another one.
+
+6. Press Y at the next prompt to proceed. You'd better or you'll need to 
    manually recreate each profile again in G Hub.
 
-6. Wait until the backup is restored.
+7. Wait until the backup is restored.
 
-7. Launch G Hub.
+8. Launch G Hub.
 
 
 ------------
@@ -149,8 +167,9 @@ FAQ
 *  Don't feed the trolls.
 
 8. Do you have plans for improvements?
-*  Adding a way to choose the backup location or where to restore from would be
-   nice. Longer term could include turning it into an executable with a GUI.
+*  I already added a way to choose the backup location or where to restore from
+   as planned. Longer term could include turning this utility
+   into an executable with a GUI.
 
 9. I want to request a feature.
 *  And I want world peace, that doesn't mean it will happen. Drop a note anyway,
@@ -331,3 +350,9 @@ VERSION HISTORY
 
 ֍ 0.8
 * Joined the backup and restore scripts into a single batch file.
+
+֍ 0.9
+* Added option to choose custom locations to save and restore the backup.
+* Renamed the batch file to reflect the name of the utility and show version
+* Updated the information prompts and fixed some details. The freaking / and \
+  mess me up every time.
