@@ -7,18 +7,18 @@ Eat it, corpos!
 G Hub Backuperator
 ------------------
 
-G Hub Backuperator utility backs up and restores Logitch G Hub's settings and
-profiles in Windows. A backup can be useful in case of drive failure, reformats
-or to transfer settings and profiles to a new computer.
+G Hub Backuperator backs up and restores Logitch G Hub's settings and profiles
+in Windows. A backup can be useful in case of drive failure, reformats or to
+transfer settings and profiles to a new computer.
 
 G Hub only allows backing up to Logitech's cloud storage, which requires 
-creating an account and many users don't want. Files can be copied and restored
-manually, but that's cumbersome and prone to mistakes. This utility automates
-those processes over a few seconds with no need to dive into system folders.
+creating an account. Files can be copied and restored manually, but that's
+cumbersome and prone to mistakes. This utility automates those processes 
+over a few seconds with no need to dive into system folders.
 
 The settings files backed up are located in %LocalAppData%\LGHUB\,
 %AppData%\G HUB\, %AppData%\lghub\ and %ProgramData%\LGHUB\ and are saved in
-Downloads/GHub_Backup.
+Downloads/GHub_Backup by default.
 
 The backup can be saved to or restored from the default Downloads\GHub_Backup
 or a custom location can be chosen.
